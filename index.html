@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapa 2: ADUFSJ-SSIND - Classista, de Luta, Coesa e Independente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+    <header id="header" class="bg-red-800 text-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-white">Chapa 2 | ADUFSJ-SSIND</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#diagnostico" class="nav-link py-1">Diagnóstico</a>
+                <a href="#missao" class="nav-link py-1">Nossa Missão</a>
+                <a href="#bandeiras" class="nav-link py-1">Nossas Bandeiras</a>
+                <a href="#equipe" class="nav-link py-1">Nossa Equipe</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-red-900 px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="#diagnostico"
+                class="block nav-link text-white hover:text-red-400 px-3 py-2 rounded-md text-base font-medium">Diagnóstico</a>
+            <a href="#missao"
+                class="block nav-link text-white hover:text-red-400 px-3 py-2 rounded-md text-base font-medium">Nossa
+                Missão</a>
+            <a href="#bandeiras"
+                class="block nav-link text-white hover:text-red-400 px-3 py-2 rounded-md text-base font-medium">Nossas
+                Bandeiras</a>
+            <a href="#equipe"
+                class="block nav-link text-white hover:text-red-400 px-3 py-2 rounded-md text-base font-medium">Nossa
+                Equipe</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="chapa-hero text-white text-center py-20 md:py-32">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">CHAPA 2: ADUFSJ-SSIND</h1>
+                <p class="text-xl md:text-3xl font-light mb-2">Classista, de Luta, Coesa e Independente</p>
+                <p class="text-lg md:text-xl text-red-400 font-semibold">Juntos pela Valorização Docente e por uma
+                    Universidade Pública Forte!</p>
+            </div>
+        </section>
+
+        <section id="diagnostico" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-4">Nossa Realidade: Enfrentando os
+                    Desafios Juntos</h2>
+                <p class="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-12">
+                    Esta seção apresenta o diagnóstico que fundamenta nossas propostas. Analisamos o cenário atual de
+                    desinvestimento e precarização que afeta a UFSJ e a carreira docente, destacando a necessidade de
+                    uma resposta sindical forte e organizada para defender nossos direitos e a universidade pública.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="text-5xl text-red-400 mb-4">✂</div>
+                        <h3 class="text-xl font-bold mb-2 text-red-800">Cortes Orçamentários</h3>
+                        <p class="text-gray-700">Instituições federais enfrentam cortes severos e subfinanciamento
+                            estrutural, comprometendo o ensino, a pesquisa e a extensão.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-5xl text-red-400 mb-4">📉</div>
+                        <h3 class="text-xl font-bold mb-2 text-red-800">Precarização do Trabalho</h3>
+                        <p class="text-gray-700">A falta de investimento e o avanço de contratos temporários e
+                            terceirização fragilizam as condições de trabalho e a carreira docente.</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-5xl text-red-400 mb-4">🛡</div>
+                        <h3 class="text-xl font-bold mb-2 text-red-800">Resistência Ativa</h3>
+                        <p class="text-gray-700">Em meio a esse desmonte, a ADUFSJ-SSind surge como resistência, lutando
+                            por direitos, dignidade e um futuro melhor para a universidade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="missao" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-12">Nossa Missão: Luta e
+                    Compromisso</h2>
+                <p class="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-12">
+                    Aqui detalhamos a missão que guia a Chapa 2. Nosso compromisso é com a luta por salários dignos e
+                    carreira justa, o fortalecimento da produção acadêmica, e a criação de um ambiente de trabalho
+                    seguro e inclusivo, com apoio jurídico e formação continuada para todos os docentes.
+                </p>
+                <div class="max-w-4xl mx-auto space-y-6 text-gray-700">
+                    <p>Nossa missão é lutar pela garantia de <strong>salários dignos</strong>, <strong>plano de carreira
+                            justo</strong> para docentes da ativa e aposentados e <strong>condições de trabalho
+                            adequadas</strong>, por meio da negociação coletiva e da pressão constante sobre o governo.
+                    </p>
+                    <p>Buscaremos monitorar <strong>projetos de lei</strong> que afetam nossa categoria e ofereceremos
+                        <strong>assessoria jurídica</strong> especializada, verificando as demandas específicas de cada
+                        campus da UFSJ.
+                    </p>
+                    <p>No contexto da UFSJ, a chapa 2 defende que a ADUFSJ-SSind deve ser agente de <strong>integração e
+                            apoio aos professores de todos os campi</strong>. É crucial reconhecer que os docentes podem
+                        ser alvos vulneráveis e essa realidade exige uma postura proativa do sindicato, oferecendo
+                        suporte, orientação e proteção.</p>
+                    <p>Acompanharemos a legislação educacional e combateremos a <strong>discriminação e o assédio
+                            sofrido pelos docentes</strong>, promovendo um ambiente de trabalho inclusivo, plural e
+                        saudável.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bandeiras" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-4">Nossas Bandeiras Principais
+                </h2>
+                <p class="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-12">
+                    Explore nossas propostas concretas para o futuro da ADUFSJ-SSIND. Cada cartão abaixo representa uma
+                    de nossas bandeiras de luta. Clique em cada um para ler os detalhes de como pretendemos fortalecer
+                    nosso sindicato, aumentar a integração e garantir mais transparência e democracia.
+                </p>
+                <div id="bandeiras-grid" class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-red-800 mb-12">Conheça Nossa Equipe</h2>
+                <p class="text-center max-w-3xl mx-auto text-lg text-gray-700 mb-12">
+                    A força de uma chapa está em sua gente. Apresentamos os docentes que compõem a Chapa 2, um grupo
+                    diverso e representativo de vários campi, unido pelo compromisso com uma gestão classista, de luta e
+                    independente. Abaixo, o gráfico ilustra nossa representatividade e, em seguida, você pode conhecer
+                    cada membro.
+                </p>
+
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-center text-red-800 mb-4">Representatividade por Campus</h3>
+                    <div class="chart-container relative w-full h-96 max-w-3xl mx-auto">
+                        <canvas id="campusChart"></canvas>
+                    </div>
+                </div>
+
+                <div id="equipe-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-red-800 text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-4">Sua Voz Faz a Diferença!</h3>
+            <p class="mb-6">Em tempos de ataques à educação pública, nossa união é a força que sustenta a universidade.
+            </p>
+            <p class="text-4xl font-bold text-red-400">Junte-se a nós! Vote Chapa 2.</p>
+            <div class="mt-8 text-lg font-semibold">
+                #ValorizaçãoDocente #UniversidadePúblicaForte #SindicatoRepresentativo
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            const bandeirasData = [
+                {
+                    icon: '👴👵',
+                    title: 'Volta do Encontro dos Aposentados',
+                    details: 'Reestabelecer e valorizar o encontro de nossos colegas aposentados, promovendo a integração contínua, a troca de experiências e garantindo que suas vozes sejam ouvidas e suas necessidades atendidas.'
+                },
+                {
+                    icon: '🏛',
+                    title: 'Nova Sede: Integração e Acolhimento',
+                    details: 'A nova sede, um sonho antigo dos fundadores, deve ser usada como um verdadeiro local de integração e acolhimento para todos os docentes. Lutaremos para que este espaço comum seja utilizado para atividades voltadas aos docentes, fomentando o convívio e a união.'
+                },
+                {
+                    icon: '🏢',
+                    title: 'Criação de Escritórios Fora de Sede',
+                    details: 'Estabelecer pontos de apoio ou "escritórios" em diferentes campi para aproximar a ADUFSJ-SSIND dos docentes, facilitando o acesso a informações, assessoria e suporte, independentemente da sua localização.'
+                },
+                {
+                    icon: '🤝',
+                    title: 'Ampliação da Integração de Todos',
+                    details: 'Desenvolver programas e atividades que promovam a união e a participação ativa de todos os docentes, ativos e aposentados, ressaltando a importância da solidariedade entre gerações e entre os diferentes campi.'
+                },
+                {
+                    icon: '✊',
+                    title: 'Luta Independente pela Categoria',
+                    details: 'Atuar de forma firme e autônoma na defesa dos direitos e interesses da categoria docente, mantendo a independência frente às políticas internas da universidade e garantindo que o foco esteja sempre na valorização do professor.'
+                },
+                {
+                    icon: '🧾',
+                    title: 'Transparência e Prestação de Contas',
+                    details: 'Comprometimento com a mais alta transparência na gestão, realizando prestações de contas financeiras trimestrais e tornando públicas as decisões do sindicato, para que todos os filiados tenham conhecimento e controle.'
+                },
+                {
+                    icon: '🗳',
+                    title: 'Integração do CRAD nas Decisões',
+                    details: 'Garantir a efetiva participação e integração do Conselho de Representantes da ADUFSJ (CRAD) nas decisões financeiras do sindicato, reforçando a gestão democrática e a responsabilidade compartilhada.'
+                },
+                {
+                    icon: '🎓',
+                    title: 'Autonomia e Financiamento',
+                    details: 'Defendemos a autonomia universitária, a indissociabilidade entre ensino, pesquisa e extensão, o aumento do financiamento público e a democratização do acesso por meio de cotas e ações afirmativas.'
+                }
+            ];
+
+            const bandeirasGrid = document.getElementById('bandeiras-grid');
+            bandeirasData.forEach((bandeira, index) => {
+                const card = document.createElement('div');
+                card.className = 'card-bandeira bg-white rounded-lg p-6 flex flex-col items-center text-center shadow-lg border border-gray-200';
+                card.setAttribute('data-index', index);
+                card.innerHTML = `
+                    <div class="text-5xl mb-4 text-red-400">${bandeira.icon}</div>
+                    <h3 class="text-lg font-bold text-red-800 mb-3">${bandeira.title}</h3>
+                    <p class="text-sm text-gray-700 flex-grow">${bandeira.details.substring(0, 80)}...</p>
+                    <span class="text-xs text-red-400 font-semibold mt-4">Clique para saber mais</span>
+                    <div class="bandeira-details hidden text-sm text-left mt-4 p-4 bg-red-50 rounded-md border border-red-200">
+                        ${bandeira.details}
+                    </div>
+                `;
+                bandeirasGrid.appendChild(card);
+            });
+
+            bandeirasGrid.addEventListener('click', function (e) {
+                const card = e.target.closest('.card-bandeira');
+                if (card) {
+                    const details = card.querySelector('.bandeira-details');
+                    const isHidden = details.classList.contains('hidden');
+
+                    document.querySelectorAll('.bandeira-details').forEach(d => d.classList.add('hidden'));
+
+                    if (isHidden) {
+                        details.classList.remove('hidden');
+                    }
+                }
+            });
+
+
+            const equipeData = [
+                { nome: 'WILSON CAMILO CHAVES', cargo: 'Presidente', depto: 'DPSIC', campus: 'CDB' },
+                { nome: 'FRANK PEREIRA DE ANDRE', cargo: 'Vice-Presidente', depto: 'Curso de Farmácia', campus: 'CCO' },
+                { nome: 'RONALDO RIBEIRO ALVES', cargo: '1º Secretário', depto: 'DEMAT', campus: 'CSA' },
+                { nome: 'BEATRIZ ALVES FERREIRA', cargo: '2º Secretário', depto: 'Curso de Farmácia', campus: 'CCO' },
+                { nome: 'FRANCIANE DE OLIVEIRA ALVARENGA', cargo: '1º Tesoureiro', depto: 'DECAC', campus: 'CTAN' },
+                { nome: 'CLEBER JOSE DA SILVA', cargo: '2º Tesoureiro', depto: 'DECEB', campus: 'CSL' },
+                { nome: 'JOSE CARLOS BORBA JUNIOR', cargo: '1º Suplente', depto: 'DTECH', campus: 'CAP' },
+                { nome: 'DENISE CARNEIRO DOS REIS BERNARDO', cargo: '2º Suplente', depto: 'DECAC', campus: 'CTAN' },
+            ];
+
+            const equipeGrid = document.getElementById('equipe-grid');
+            equipeData.forEach(membro => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-lg p-6 shadow-md border border-gray-200 text-center';
+                card.innerHTML = `
+                    <h4 class="text-lg font-bold text-red-800">${membro.nome}</h4>
+                    <p class="text-red-400 font-semibold">${membro.cargo}</p>
+                    <p class="text-sm text-gray-700 mt-2">${membro.depto}</p>
+                    <p class="text-sm text-gray-500 font-medium">Campus: ${membro.campus}</p>
+                `;
+                equipeGrid.appendChild(card);
+            });
+
+            const campusCounts = equipeData.reduce((acc, membro) => {
+                acc[membro.campus] = (acc[membro.campus] || 0) + 1;
+                return acc;
+            }, {});
+
+            const ctx = document.getElementById('campusChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(campusCounts),
+                    datasets: [{
+                        label: 'Representantes por Campus',
+                        data: Object.values(campusCounts),
+                        backgroundColor: '#991B1B', /* Red-800 */
+                        borderColor: '#F87171', /* Red-400 */
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 1
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: '#374151', /* Gray-700 */
+                            titleFont: {
+                                size: 14,
+                                weight: 'bold'
+                            },
+                            bodyFont: {
+                                size: 12
+                            },
+                            padding: 10,
+                            cornerRadius: 4
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

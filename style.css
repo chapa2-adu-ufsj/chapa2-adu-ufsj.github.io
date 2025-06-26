@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F9FAFB;
+    /* Very light gray */
+    color: #1F2937;
+    /* Dark gray for text */
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chapa-hero {
+    background: linear-gradient(rgba(153, 27, 27, 0.8), rgba(153, 27, 27, 0.8)), url('https://placehold.co/1920x1080/991B1B/F9FAFB?text=UFSJ') center center/cover no-repeat;
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #F87171;
+    /* Accent Red */
+    border-bottom-color: #F87171;
+    /* Accent Red */
+}
+
+.card-bandeira {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card-bandeira:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
